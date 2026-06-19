@@ -1,0 +1,81 @@
+ Data Classification Using AI – KNN on Iris Dataset
+project Overview:
+This project builds a **supervised machine learning classification model** using the K-Nearest Neighbors (KNN) algorithm on the classic Iris flower dataset. The model learns to classify iris flowers into 3 species based on their physical measurements.
+ Features:
+
+-  Loads and explores the Iris dataset (150 samples, 4 features, 3 classes)
+- Splits data into 80% training / 20% testing sets
+-  Applies StandardScaler for feature normalization
+-  Trains a KNN classifier with K=5
+-  Evaluates with Accuracy, Confusion Matrix & F1-Score
+- Live prediction on custom input
+
+  Tech Stack
+
+| Tool | Details |
+|------|---------|
+| Language | Python 3.x |
+| Libraries | scikit-learn, pandas |
+| Algorithm | K-Nearest Neighbors (KNN) |
+| Dataset | Iris (built-in sklearn) |
+| Concepts | Supervised Learning, Feature Scaling, Model Evaluation |
+
+Project Structure
+classification-project/
+│
+├── classification.py     # Main ML pipeline code
+├── README.md             # Project documentation
+└── screenshot.png        # Sample output screenshot
+  Sample Output
+============================================================
+   DecodeLabs | Project 2: Data Classification Using AI
+============================================================
+
+DATASET OVERVIEW
+   Total Samples  : 150
+   Features       : 4
+   Classes        : ['setosa', 'versicolor', 'virginica']
+
+ TRAIN-TEST SPLIT
+   Training samples : 120
+   Testing samples  : 30
+
+  Feature Scaling applied (StandardScaler)
+ KNN Model trained with K=5
+
+============================================================
+   MODEL EVALUATION
+============================================================
+
+ Accuracy Score : 100.00%
+
+ Confusion Matrix:
+                Predicted
+                Setosa  Versicolor  Virginica
+   Actual setosa         10           0          0
+   Actual versicolor      0           9          0
+   Actual virginica       0           0         11
+
+ Classification Report:
+              precision  recall  f1-score
+    setosa       1.00     1.00      1.00
+    versicolor   1.00     1.00      1.00
+    virginica    1.00     1.00      1.00
+
+ How It Works (IPO Model)
+
+**INPUT** → Load Iris dataset + Feature Scaling  
+**PROCESS** → Train-Test Split (80/20) + KNN Algorithm (K=5)  
+**OUTPUT** → Confusion Matrix + F1 Score + Accuracy
+
+ Key Concepts Learned
+
+- **Supervised Learning** — training on labeled data
+- **Train-Test Split** — separating data to avoid overfitting
+- **StandardScaler** — normalizing features (Mean=0, Variance=1)
+- **KNN Algorithm** — classifying by majority vote of K nearest neighbors
+- **Confusion Matrix** — understanding TP, FP, FN, TN
+- **F1 Score** — harmonic mean of Precision and Recall
+
+
+
